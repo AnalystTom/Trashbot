@@ -1,0 +1,40 @@
+{
+  "total_traces": 80036,
+  "success_count": 13389,
+  "failure_count": 66647,
+  "success_rate": 0.1673,
+  "avg_steps": 53.87,
+  "avg_steps_success": 31.34,
+  "avg_steps_failure": 58.39,
+  "failure_distribution": {
+    "UNKNOWN": 66647
+  },
+  "model_stats": {
+    "swe-agent-llama-70b": {
+      "total": 74792,
+      "success": 12467,
+      "success_rate": 0.16668895068991335
+    },
+    "swe-agent-llama-8b": {
+      "total": 4053,
+      "success": 614,
+      "success_rate": 0.15149272144090797
+    },
+    "swe-agent-llama-405b": {
+      "total": 1191,
+      "success": 308,
+      "success_rate": 0.2586062132661629
+    }
+  },
+  "exit_status_counts": {
+    "submitted (exit_context)": 21026,
+    "submitted": 51087,
+    "exit_context": 3568,
+    "submitted_no_patch": 1066,
+    "early_exit": 3176,
+    "submitted (exit_format)": 80,
+    "exit_format": 20,
+    "submitted (exit_cost)": 10,
+    "exit_cost": 3
+  }
+}

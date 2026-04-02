@@ -1,0 +1,27 @@
+{
+  "total_rows": 80036,
+  "success_count": 13389,
+  "fail_count": 66647,
+  "success_rate": 0.1672872207506622,
+  "avg_steps": 53.86679744115148,
+  "min_steps": 2,
+  "max_steps": 817,
+  "models": {
+    "swe-agent-llama-70b": 74792,
+    "swe-agent-llama-8b": 4053,
+    "swe-agent-llama-405b": 1191
+  },
+  "exit_statuses": {
+    "submitted": 51087,
+    "submitted (exit_context)": 21026,
+    "exit_context": 3568,
+    "early_exit": 3176,
+    "submitted_no_patch": 1066,
+    "submitted (exit_format)": 80,
+    "exit_format": 20,
+    "submitted (exit_cost)": 10,
+    "exit_cost": 3
+  },
+  "missing_patch_count": 9294,
+  "missing_eval_logs_count": 9397
+}

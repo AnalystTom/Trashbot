@@ -33,6 +33,12 @@ python3 -m pip install -e '.[connectors]'
 PYTHONPATH=src python3 -m trashbot.hf_dataset_connector --out swe_agent_traces.json --limit 5000
 PYTHONPATH=src python3 -m trashbot.main --input-file swe_agent_traces.json --report-out report.md
 
+4) Inspect the Hugging Face dataset directly (for agent debugging / exploration)
+
+python3 /Users/tom/Dev/Trashbot/hermes-agent/load_data.py
+python3 /Users/tom/Dev/Trashbot/hermes-agent/load_data.py --sample-size 1 --fields instance_id,model_name,target
+python3 /Users/tom/Dev/Trashbot/hermes-agent/load_data.py --sample-size 2 --full-values --no-streaming
+
 Optional install (newer pip/setuptools environments):
 
 python3 -m pip install -e .
