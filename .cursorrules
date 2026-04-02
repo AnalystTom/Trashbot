@@ -1,0 +1,30 @@
+# Trashbot — Cursor Rules
+
+## Project Context
+This is a self-improving agent that learns from 80,000 real SWE-agent trajectories.
+It extracts rules from failed vs passing attempts and injects them into the agent's prompt.
+
+## Data
+- 80,036 trajectories in `data/swe-agent-trajectories/data/*.parquet`
+- 10 curated traces in `failed_traces/10_traces_to_fix/` (each has failed + passing attempts)
+- Baseline: 16.7% success rate, 83.3% failure rate
+- Generated rules in `rules/rules_v1.md`
+
+## Key Commands
+- `python scripts/generate_rules.py` — extract rules from traces
+- `python scripts/generate_rules.py --append-to CLAUDE.md` — extract and inject into agent prompt
+- `python query_traces.py --id <instance_id>` — look up any trace
+- `python scripts/phase1_pipeline.py` — load and validate dataset
+- `python scripts/phase2_baseline.py` — compute baseline KPIs
+
+## Code Style
+- Python 3.10+, type hints where helpful
+- Keep it simple — no unnecessary abstractions
+- Scripts go in `scripts/`, modules in `src/`
+- Rules output goes in `rules/`
+
+## When Working on This Project
+- Always activate venv first: `source .venv/bin/activate`
+- Check `rules/rules_v1.md` for the latest generated rules
+- The self-improving loop: traces → rules → CLAUDE.md → agent uses rules → new traces
+- Failed traces have both `failed_traces` and `passing_trace` — always compare both
