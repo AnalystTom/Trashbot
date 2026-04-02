@@ -1,5 +1,9 @@
 # Trashbot
 
+RESULTS
+<img width="684" height="637" alt="image" src="https://github.com/user-attachments/assets/5cc04df3-199d-4f91-a371-dd6c4ce0e142" />
+
+
 > **Built with [Cursor](https://cursor.sh)** — AI-native code editor with Agent mode.
 > See [docs/CURSOR_WORKFLOW.md](docs/CURSOR_WORKFLOW.md) for the full build process.
 
