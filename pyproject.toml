@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trashbot"
+version = "0.1.0"
+description = "ClawBench self-improvement trace coach"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+connectors = [
+  "datasets>=2.20.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
