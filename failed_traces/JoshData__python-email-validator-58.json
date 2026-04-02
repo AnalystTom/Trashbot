@@ -1,0 +1,79 @@
+{
+  "instance_id": "JoshData__python-email-validator-58",
+  "total_attempts": 5,
+  "traces": [
+    {
+      "instance_id": "JoshData__python-email-validator-58",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 716,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "JoshData__python-email-validator-58",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 538,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "JoshData__python-email-validator-58",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 1254,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "JoshData__python-email-validator-58",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 545,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "JoshData__python-email-validator-58",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 539,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    }
+  ]
+}

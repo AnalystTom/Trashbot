@@ -1,0 +1,215 @@
+{
+  "instance_id": "astropy__pyvo-427",
+  "total_attempts": 14,
+  "traces": [
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 174,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 808,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 81,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 836,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 697,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 15,
+      "has_patch": true,
+      "patch_length": 1213,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 3789,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 49,
+      "has_patch": true,
+      "patch_length": 1258,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 622,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 898,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 2079,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 767,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropy__pyvo-427",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 49,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

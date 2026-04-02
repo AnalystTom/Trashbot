@@ -1,0 +1,1008 @@
+{
+  "instance_id": "mozilla__bleach-429",
+  "total_attempts": 61,
+  "traces": [
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 75,
+      "has_patch": true,
+      "patch_length": 1083,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 55,
+      "has_patch": true,
+      "patch_length": 387,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 63,
+      "has_patch": true,
+      "patch_length": 2143,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 53,
+      "has_patch": true,
+      "patch_length": 1578,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 387,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 71,
+      "has_patch": true,
+      "patch_length": 14953,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 37,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 67,
+      "has_patch": true,
+      "patch_length": 1636,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 71,
+      "has_patch": true,
+      "patch_length": 2011,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 79,
+      "has_patch": true,
+      "patch_length": 1577,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 2326,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 739,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 41,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 67,
+      "has_patch": true,
+      "patch_length": 1726,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 55,
+      "has_patch": true,
+      "patch_length": 387,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 1085,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 33,
+      "has_patch": true,
+      "patch_length": 764,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_format)",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 1375,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 101,
+      "has_patch": true,
+      "patch_length": 2656,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 860,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 701,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 81,
+      "has_patch": true,
+      "patch_length": 387,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 43,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 61,
+      "has_patch": true,
+      "patch_length": 1211,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 49,
+      "has_patch": true,
+      "patch_length": 1398,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 51,
+      "has_patch": true,
+      "patch_length": 399,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 57,
+      "has_patch": true,
+      "patch_length": 1086,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 63,
+      "has_patch": true,
+      "patch_length": 1356,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 67,
+      "has_patch": true,
+      "patch_length": 387,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 650,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 71,
+      "has_patch": true,
+      "patch_length": 7190,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 77,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 5,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 1079,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 67,
+      "has_patch": true,
+      "patch_length": 2293,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 57,
+      "has_patch": true,
+      "patch_length": 702,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 55,
+      "has_patch": true,
+      "patch_length": 498,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 1601,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 387,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 558,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 79,
+      "has_patch": true,
+      "patch_length": 1351,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 697,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 645,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 53,
+      "has_patch": true,
+      "patch_length": 387,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 85,
+      "has_patch": true,
+      "patch_length": 1167,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 5,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 65,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 53,
+      "has_patch": true,
+      "patch_length": 243,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 63,
+      "has_patch": true,
+      "patch_length": 1122,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 813,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 57,
+      "has_patch": true,
+      "patch_length": 243,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 57,
+      "has_patch": true,
+      "patch_length": 389,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 55,
+      "has_patch": true,
+      "patch_length": 1623,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 1199,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 1272,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 79,
+      "has_patch": true,
+      "patch_length": 1614,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 75,
+      "has_patch": true,
+      "patch_length": 498,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 4978,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 47,
+      "has_patch": true,
+      "patch_length": 2428,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 1432,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "mozilla__bleach-429",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 55,
+      "has_patch": true,
+      "patch_length": 1139,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

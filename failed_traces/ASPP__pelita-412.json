@@ -1,0 +1,92 @@
+{
+  "instance_id": "ASPP__pelita-412",
+  "total_attempts": 6,
+  "traces": [
+    {
+      "instance_id": "ASPP__pelita-412",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 4047,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "ASPP__pelita-412",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 39,
+      "has_patch": true,
+      "patch_length": 4707,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "ASPP__pelita-412",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_format)",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 35274,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "ASPP__pelita-412",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 4448,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "ASPP__pelita-412",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 51,
+      "has_patch": true,
+      "patch_length": 5790,
+      "failure_signals": [
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "ASPP__pelita-412",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 4513,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "instance_id": "astropenguin__pandas-dataclasses-23",
+  "total_attempts": 6,
+  "traces": [
+    {
+      "instance_id": "astropenguin__pandas-dataclasses-23",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 1123,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropenguin__pandas-dataclasses-23",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 11,
+      "has_patch": true,
+      "patch_length": 323,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropenguin__pandas-dataclasses-23",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 323,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropenguin__pandas-dataclasses-23",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 1147,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "astropenguin__pandas-dataclasses-23",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 189,
+      "has_patch": true,
+      "patch_length": 5431,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "astropenguin__pandas-dataclasses-23",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 47,
+      "has_patch": true,
+      "patch_length": 1517,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

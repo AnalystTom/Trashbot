@@ -1,0 +1,1039 @@
+{
+  "instance_id": "akolar__ogn-lib-18",
+  "total_attempts": 60,
+  "traces": [
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 26677,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 89,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 87,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 17,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 73,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 55,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 73,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 87,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 1385,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 1079,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 25664,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 83,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 87,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 25,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 85,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 81,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 83,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 69,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 103,
+      "has_patch": true,
+      "patch_length": 385,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 75,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 47,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 9757,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 91,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 25,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 41,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 21181,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 91,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 85,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 87,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 83,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 95,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 87,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 21,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 83,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 41,
+      "has_patch": true,
+      "patch_length": 1011,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 77,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 121,
+      "has_patch": true,
+      "patch_length": 700,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 21,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 760,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 605,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 107,
+      "has_patch": true,
+      "patch_length": 1542,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 87,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 87,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 95,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 9757,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 105,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 39,
+      "has_patch": true,
+      "patch_length": 564,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "akolar__ogn-lib-18",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 13,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    }
+  ]
+}

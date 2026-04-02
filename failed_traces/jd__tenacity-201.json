@@ -1,0 +1,194 @@
+{
+  "instance_id": "jd__tenacity-201",
+  "total_attempts": 12,
+  "traces": [
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 784,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 421,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 89,
+      "has_patch": true,
+      "patch_length": 308,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 1015,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 344,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 978,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 97,
+      "has_patch": true,
+      "patch_length": 1184,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 63,
+      "has_patch": true,
+      "patch_length": 3592,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 109,
+      "has_patch": true,
+      "patch_length": 280,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 45,
+      "has_patch": true,
+      "patch_length": 822,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 45,
+      "has_patch": true,
+      "patch_length": 1103,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "jd__tenacity-201",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 301,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

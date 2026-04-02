@@ -1,0 +1,1060 @@
+{
+  "instance_id": "springload__draftjs_exporter-57",
+  "total_attempts": 64,
+  "traces": [
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 67,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 49,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 51,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 59,
+      "has_patch": true,
+      "patch_length": 2555,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 3081,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 53,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 83,
+      "has_patch": true,
+      "patch_length": 5844,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 79,
+      "has_patch": true,
+      "patch_length": 23819,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 91,
+      "has_patch": true,
+      "patch_length": 368,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 57,
+      "has_patch": true,
+      "patch_length": 2462,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 29,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 11,
+      "has_patch": true,
+      "patch_length": 970,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 59,
+      "has_patch": true,
+      "patch_length": 2798,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 863,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 45,
+      "has_patch": true,
+      "patch_length": 4750,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 99,
+      "has_patch": true,
+      "patch_length": 798,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 79,
+      "has_patch": true,
+      "patch_length": 2182,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 59,
+      "has_patch": true,
+      "patch_length": 754,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 15,
+      "has_patch": true,
+      "patch_length": 1117,
+      "failure_signals": [
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 85,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 5,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 71,
+      "has_patch": true,
+      "patch_length": 1965,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 119,
+      "has_patch": true,
+      "patch_length": 368,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 81,
+      "has_patch": true,
+      "patch_length": 5440,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 63,
+      "has_patch": true,
+      "patch_length": 1322,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 85,
+      "has_patch": true,
+      "patch_length": 3252,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 89,
+      "has_patch": true,
+      "patch_length": 959,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 99,
+      "has_patch": true,
+      "patch_length": 4933,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 961,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 383,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 368,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 107,
+      "has_patch": true,
+      "patch_length": 1341,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 21,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 257,
+      "has_patch": true,
+      "patch_length": 754,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 1158,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 29,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 137,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 73,
+      "has_patch": true,
+      "patch_length": 3815,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 83,
+      "has_patch": true,
+      "patch_length": 1944,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 81,
+      "has_patch": true,
+      "patch_length": 5516,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 59,
+      "has_patch": true,
+      "patch_length": 727,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 642,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 115,
+      "has_patch": true,
+      "patch_length": 2138,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 51,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 29,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 5,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 85,
+      "has_patch": true,
+      "patch_length": 5922,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 163,
+      "has_patch": true,
+      "patch_length": 135,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 23,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 37,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 53,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 101,
+      "has_patch": true,
+      "patch_length": 1977,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 79,
+      "has_patch": true,
+      "patch_length": 3301,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 81,
+      "has_patch": true,
+      "patch_length": 5154,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 79,
+      "has_patch": true,
+      "patch_length": 368,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 69,
+      "has_patch": true,
+      "patch_length": 3281,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 1095,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 47,
+      "has_patch": true,
+      "patch_length": 1057,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 99,
+      "has_patch": true,
+      "patch_length": 990,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 4512,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 63,
+      "has_patch": true,
+      "patch_length": 1688,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 33,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 73,
+      "has_patch": true,
+      "patch_length": 391,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "springload__draftjs_exporter-57",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 61,
+      "has_patch": true,
+      "patch_length": 2792,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "instance_id": "EdinburghGenomics__EGCG-Core-12",
+  "total_attempts": 7,
+  "traces": [
+    {
+      "instance_id": "EdinburghGenomics__EGCG-Core-12",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 237,
+      "has_patch": true,
+      "patch_length": 3551,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "EdinburghGenomics__EGCG-Core-12",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 81,
+      "has_patch": true,
+      "patch_length": 2723,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "EdinburghGenomics__EGCG-Core-12",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 87,
+      "has_patch": true,
+      "patch_length": 2723,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "EdinburghGenomics__EGCG-Core-12",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 55,
+      "has_patch": true,
+      "patch_length": 2723,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "EdinburghGenomics__EGCG-Core-12",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 59,
+      "has_patch": true,
+      "patch_length": 2723,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "EdinburghGenomics__EGCG-Core-12",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 73,
+      "has_patch": true,
+      "patch_length": 2723,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "EdinburghGenomics__EGCG-Core-12",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 71,
+      "has_patch": true,
+      "patch_length": 2723,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    }
+  ]
+}

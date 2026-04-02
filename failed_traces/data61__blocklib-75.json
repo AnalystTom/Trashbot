@@ -1,0 +1,699 @@
+{
+  "instance_id": "data61__blocklib-75",
+  "total_attempts": 46,
+  "traces": [
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 1635,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 11,
+      "has_patch": true,
+      "patch_length": 632,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 1123,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 85,
+      "has_patch": true,
+      "patch_length": 2609,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 33,
+      "has_patch": true,
+      "patch_length": 934,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 9,
+      "has_patch": true,
+      "patch_length": 1145,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 629,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 745,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 609,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 711,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 695,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 1993,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 898,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 1228,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 2318,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 15,
+      "has_patch": true,
+      "patch_length": 744,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 39,
+      "has_patch": true,
+      "patch_length": 1635,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 15,
+      "has_patch": true,
+      "patch_length": 628,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 695,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 9,
+      "has_patch": true,
+      "patch_length": 782,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 635,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 15,
+      "has_patch": true,
+      "patch_length": 1107,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 11,
+      "has_patch": true,
+      "patch_length": 1275,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 803,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 572,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 9,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 67,
+      "has_patch": true,
+      "patch_length": 2626,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 657,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 603,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 11,
+      "has_patch": true,
+      "patch_length": 797,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 669,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 1178,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 11,
+      "has_patch": true,
+      "patch_length": 795,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 967,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 544,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 776,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 15,
+      "has_patch": true,
+      "patch_length": 863,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 1701,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 15,
+      "has_patch": true,
+      "patch_length": 711,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 83,
+      "has_patch": true,
+      "patch_length": 1899,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 776,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 39,
+      "has_patch": true,
+      "patch_length": 767,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 577,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 1178,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 29,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "data61__blocklib-75",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 33,
+      "has_patch": true,
+      "patch_length": 978,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

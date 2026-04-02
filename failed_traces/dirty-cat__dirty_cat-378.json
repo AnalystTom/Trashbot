@@ -1,0 +1,665 @@
+{
+  "instance_id": "dirty-cat__dirty_cat-378",
+  "total_attempts": 41,
+  "traces": [
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 2304,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 548,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 435,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 833,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 97,
+      "has_patch": true,
+      "patch_length": 2533,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 1467,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 516,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 83,
+      "has_patch": true,
+      "patch_length": 893,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 2198,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 75,
+      "has_patch": true,
+      "patch_length": 300,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 45,
+      "has_patch": true,
+      "patch_length": 2688,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 63,
+      "has_patch": true,
+      "patch_length": 300,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 777,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 941,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 87,
+      "has_patch": true,
+      "patch_length": 300,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 65,
+      "has_patch": true,
+      "patch_length": 2953,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 55,
+      "has_patch": true,
+      "patch_length": 296,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 577,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 1882,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 516,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 678,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 613,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 504,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 961,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 527,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 312,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 710,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 1063,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 109,
+      "has_patch": true,
+      "patch_length": 300,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 533,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 47,
+      "has_patch": true,
+      "patch_length": 2588,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 546,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 548,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 51,
+      "has_patch": true,
+      "patch_length": 300,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 33,
+      "has_patch": true,
+      "patch_length": 2035,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-8b",
+      "exit_status": "submitted",
+      "steps": 57,
+      "has_patch": true,
+      "patch_length": 876,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 111,
+      "has_patch": true,
+      "patch_length": 300,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-405b",
+      "exit_status": "submitted",
+      "steps": 27,
+      "has_patch": true,
+      "patch_length": 1008,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 23,
+      "has_patch": true,
+      "patch_length": 807,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 1292,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "dirty-cat__dirty_cat-378",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 17,
+      "has_patch": true,
+      "patch_length": 712,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

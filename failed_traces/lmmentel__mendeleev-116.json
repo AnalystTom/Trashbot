@@ -1,0 +1,144 @@
+{
+  "instance_id": "lmmentel__mendeleev-116",
+  "total_attempts": 9,
+  "traces": [
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 502,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 502,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted_no_patch",
+      "steps": 23,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 39,
+      "has_patch": true,
+      "patch_length": 3914,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 39,
+      "has_patch": true,
+      "patch_length": 944,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 33,
+      "has_patch": true,
+      "patch_length": 564,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 33,
+      "has_patch": true,
+      "patch_length": 1774,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 31,
+      "has_patch": true,
+      "patch_length": 729,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "lmmentel__mendeleev-116",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 25,
+      "has_patch": true,
+      "patch_length": 502,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

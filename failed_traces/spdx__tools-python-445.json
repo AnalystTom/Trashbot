@@ -1,0 +1,34 @@
+{
+  "instance_id": "spdx__tools-python-445",
+  "total_attempts": 2,
+  "traces": [
+    {
+      "instance_id": "spdx__tools-python-445",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 45,
+      "has_patch": true,
+      "patch_length": 1197,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "spdx__tools-python-445",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 9,
+      "has_patch": true,
+      "patch_length": 966,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

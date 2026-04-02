@@ -1,0 +1,19 @@
+{
+  "instance_id": "pylint-dev__astroid-1268",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "pylint-dev__astroid-1268",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 992,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

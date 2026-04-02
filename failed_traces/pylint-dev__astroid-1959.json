@@ -1,0 +1,32 @@
+{
+  "instance_id": "pylint-dev__astroid-1959",
+  "total_attempts": 2,
+  "traces": [
+    {
+      "instance_id": "pylint-dev__astroid-1959",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 19,
+      "has_patch": true,
+      "patch_length": 1919,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1959",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 41,
+      "has_patch": true,
+      "patch_length": 1982,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

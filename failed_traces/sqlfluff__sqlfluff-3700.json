@@ -1,0 +1,38 @@
+{
+  "instance_id": "sqlfluff__sqlfluff-3700",
+  "total_attempts": 2,
+  "traces": [
+    {
+      "instance_id": "sqlfluff__sqlfluff-3700",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 51,
+      "has_patch": true,
+      "patch_length": 3153,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3700",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 135,
+      "has_patch": true,
+      "patch_length": 379,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

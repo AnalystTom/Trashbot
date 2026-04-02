@@ -1,0 +1,21 @@
+{
+  "instance_id": "tobgu__pyrsistent-281",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "tobgu__pyrsistent-281",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 37,
+      "has_patch": true,
+      "patch_length": 777,
+      "failure_signals": [
+        "BAD_PATCH"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "instance_id": "vogt4nick__dequindre-53",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "vogt4nick__dequindre-53",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 237,
+      "has_patch": true,
+      "patch_length": 1502,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

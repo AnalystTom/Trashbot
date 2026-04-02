@@ -1,0 +1,21 @@
+{
+  "instance_id": "microsoft__electionguard-python-756",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "microsoft__electionguard-python-756",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 9,
+      "has_patch": true,
+      "patch_length": 1029,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

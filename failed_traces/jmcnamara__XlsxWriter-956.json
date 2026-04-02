@@ -1,0 +1,40 @@
+{
+  "instance_id": "jmcnamara__XlsxWriter-956",
+  "total_attempts": 2,
+  "traces": [
+    {
+      "instance_id": "jmcnamara__XlsxWriter-956",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 57,
+      "has_patch": true,
+      "patch_length": 6129,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "jmcnamara__XlsxWriter-956",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 3,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    }
+  ]
+}

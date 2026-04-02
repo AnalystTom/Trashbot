@@ -1,0 +1,38 @@
+{
+  "instance_id": "pydicom__pydicom-900",
+  "total_attempts": 2,
+  "traces": [
+    {
+      "instance_id": "pydicom__pydicom-900",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 191,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "NO_TEST_USAGE",
+        "EARLY_EXIT"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "pydicom__pydicom-900",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 21,
+      "has_patch": true,
+      "patch_length": 828,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

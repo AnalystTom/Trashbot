@@ -1,0 +1,22 @@
+{
+  "instance_id": "python-lsp__python-lsp-server-454",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "python-lsp__python-lsp-server-454",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted (exit_context)",
+      "steps": 29,
+      "has_patch": true,
+      "patch_length": 700,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

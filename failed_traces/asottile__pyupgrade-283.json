@@ -1,0 +1,51 @@
+{
+  "instance_id": "asottile__pyupgrade-283",
+  "total_attempts": 3,
+  "traces": [
+    {
+      "instance_id": "asottile__pyupgrade-283",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 79,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    },
+    {
+      "instance_id": "asottile__pyupgrade-283",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 3,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "asottile__pyupgrade-283",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "exit_context",
+      "steps": 97,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING",
+        "EARLY_EXIT_CONTEXT"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": true
+    }
+  ]
+}

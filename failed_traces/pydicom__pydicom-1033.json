@@ -1,0 +1,21 @@
+{
+  "instance_id": "pydicom__pydicom-1033",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "pydicom__pydicom-1033",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 47,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

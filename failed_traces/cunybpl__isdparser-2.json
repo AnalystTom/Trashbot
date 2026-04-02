@@ -1,0 +1,21 @@
+{
+  "instance_id": "cunybpl__isdparser-2",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "cunybpl__isdparser-2",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 35,
+      "has_patch": true,
+      "patch_length": 1084,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

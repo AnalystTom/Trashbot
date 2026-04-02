@@ -1,0 +1,51 @@
+{
+  "instance_id": "ResearchObject__ro-crate-py-152",
+  "total_attempts": 3,
+  "traces": [
+    {
+      "instance_id": "ResearchObject__ro-crate-py-152",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 9,
+      "has_patch": true,
+      "patch_length": 440,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "ResearchObject__ro-crate-py-152",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 13,
+      "has_patch": true,
+      "patch_length": 404,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    },
+    {
+      "instance_id": "ResearchObject__ro-crate-py-152",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 7,
+      "has_patch": true,
+      "patch_length": 404,
+      "failure_signals": [
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": false,
+      "ran_tests": false,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

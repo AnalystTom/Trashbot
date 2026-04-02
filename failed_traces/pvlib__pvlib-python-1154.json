@@ -1,0 +1,23 @@
+{
+  "instance_id": "pvlib__pvlib-python-1154",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "pvlib__pvlib-python-1154",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 61,
+      "has_patch": true,
+      "patch_length": 1034,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    }
+  ]
+}

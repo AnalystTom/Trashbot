@@ -1,0 +1,21 @@
+{
+  "instance_id": "mherrmann__gitignore_parser-38",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "mherrmann__gitignore_parser-38",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 3,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "LOOPING"
+      ],
+      "is_looping": true,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}

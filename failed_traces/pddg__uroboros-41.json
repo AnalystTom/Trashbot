@@ -1,0 +1,23 @@
+{
+  "instance_id": "pddg__uroboros-41",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "pddg__uroboros-41",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "submitted",
+      "steps": 51,
+      "has_patch": true,
+      "patch_length": 830,
+      "failure_signals": [
+        "LOOPING",
+        "BAD_PATCH",
+        "NO_TEST_USAGE"
+      ],
+      "is_looping": true,
+      "ran_tests": false,
+      "edit_syntax_errors": true,
+      "hit_context_limit": false
+    }
+  ]
+}

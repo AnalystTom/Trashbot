@@ -1,0 +1,21 @@
+{
+  "instance_id": "ASFHyP3__hyp3-sdk-53",
+  "total_attempts": 1,
+  "traces": [
+    {
+      "instance_id": "ASFHyP3__hyp3-sdk-53",
+      "model": "swe-agent-llama-70b",
+      "exit_status": "early_exit",
+      "steps": 33,
+      "has_patch": false,
+      "patch_length": 0,
+      "failure_signals": [
+        "EARLY_EXIT"
+      ],
+      "is_looping": false,
+      "ran_tests": true,
+      "edit_syntax_errors": false,
+      "hit_context_limit": false
+    }
+  ]
+}
