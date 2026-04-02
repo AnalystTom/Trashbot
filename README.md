@@ -43,6 +43,8 @@ traces (80K) --> rule extractor --> 10 rules --> agent prompt --> agent improves
 - [x] v3: LLM subagents (10 in parallel via Cursor) — 10 unique, specific rules
 - [x] Save rules to `rules/rules_v1.md`
 - [x] Inject rules into `CLAUDE.md` — self-improving loop closed
+- [x] Formalize as `/learn-from-traces` skill (SKILL.md + TypeScript)
+- [x] Register skill as bundled slash command in Claude Code
 - [x] Document architecture (`docs/ARCHITECTURE.md`)
 - [x] Document Cursor workflow (`docs/CURSOR_WORKFLOW.md`)
 
@@ -84,22 +86,30 @@ python query_traces.py --id django__django-11099 --show-trajectory
 
 ```
 Trashbot/
+├── claude/
+│   └── skills/
+│       └── learn-from-traces/
+│           └── SKILL.md            # Formal skill: batch trace analysis
 ├── scripts/
-│   ├── generate_rules.py          # Rule extraction tool (our main contribution)
+│   ├── generate_rules.py          # Rule extraction tool (Cursor prototype)
 │   ├── phase1_pipeline.py         # Data loading + validation
 │   └── phase2_baseline.py         # Baseline KPI computation
 ├── rules/
 │   └── rules_v1.md                # 10 generated rules (LLM-extracted)
 ├── baseline/                      # Baseline metrics + failure analysis
 ├── failed_traces/
-│   └── 10_traces_to_fix/          # Curated traces with passing patches
+│   ├── 10_traces_to_fix/          # Curated traces with passing patches
+│   └── *.json                     # 3,560 failed trace exports
 ├── src/
+│   ├── skills/bundled/
+│   │   └── learnFromTraces.ts     # /learn-from-traces slash command
 │   ├── data/                      # Dataset loading + validation
 │   ├── analysis/                  # Baseline metrics
 │   └── classification/            # Failure taxonomy
 ├── docs/
 │   ├── ARCHITECTURE.md            # Full architecture + data flow
 │   └── CURSOR_WORKFLOW.md         # How we built this in Cursor
+├── .cursorrules                   # Cursor project config
 ├── CLAUDE.md                      # Agent prompt with injected rules
 ├── PROGRESS.md                    # Build timeline + contributions
 └── README.md                      # This file

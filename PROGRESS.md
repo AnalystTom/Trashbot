@@ -1,10 +1,10 @@
 # PROGRESS — Filip's Contributions (Built in Cursor)
 
 ## What's happening RIGHT NOW
-- 10 LLM subagents ran in parallel via Cursor Agent, each read a full trace
-- 10 unique, specific rules generated and saved to `rules/rules_v1.md`
-- Rules injected into `CLAUDE.md` — the self-improving loop is CLOSED
-- Documentation updated: ARCHITECTURE.md, CURSOR_WORKFLOW.md
+- Tom's agent built a formal `/learn-from-traces` skill (SKILL.md + TypeScript)
+- The skill processes 3,560 traces in batches of 10, writes skills to `.claude/skills/`
+- This is the productionized version of our rule extraction approach
+- Our `generate_rules.py` proved the concept, now it's a first-class Claude skill
 
 ## Our Contribution (built in Cursor Agent mode)
 
@@ -41,6 +41,8 @@ engine and closed the self-improving loop — all in Cursor.
 - `baseline/` — all baseline results + 8b model analysis
 - `failed_traces/` — 3,560 exported traces + 10 curated traces
 - `query_traces.py` — trace query tool
+- `claude/skills/learn-from-traces/SKILL.md` — formal skill definition
+- `src/skills/bundled/learnFromTraces.ts` — registered as `/learn-from-traces` slash command
 
 ## Resolved Questions
 - ~~3 traces → 1 rule produces generic rules~~ SOLVED: LLM subagents produce specific rules
