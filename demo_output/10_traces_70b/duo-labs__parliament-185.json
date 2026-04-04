@@ -1,0 +1,23 @@
+{
+  "instance_id": "duo-labs__parliament-185",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nPolicy variables in the resource element not supported\nHi, \r\nexample policy:\r\n\r\n```json\r\n{\r\n  \"Version\": \"2012-10-17\",\r\n  \"Statement\": [\r\n  {\r\n      \"Sid\": \"BucketAccess\",\r\n      \"Effect\": \"Allow\",\r\n      \"Action\": [\r\n        \"s3:GetBucketLocation\",\r\n        \"s3:GetBucketVersioning\",\r\n        \"s3:GetEncryptionConfiguration\",\r\n        \"s3:ListBucket\",\r\n        \"s3:ListBucketMultipartUploads\",\r\n        \"s3:ListBucketVersions\"\r\n      ],\r\n      \"Resource\": \"arn:aws:s3::bucket-for-client-${aws",
+  "what_went_wrong": "Not all iterations append an entry. Rule says: ensure ALL iterations maintain length parity.",
+  "failed_patch": "\ndiff --git a/parliament/__init__.py b/parliament/__init__.py\nindex 91dd4b3..507777b 100644\n--- a/parliament/__init__.py\n+++ b/parliament/__init__.py\n@@ -187,7 +187,7 @@ def is_arn_strictly_valid(resource_type, arn_format, resource):\n                 return False\n \n         # replace aws variable and check for other colons\n-        resource_id_no_vars = re.sub(r\"\\$\\{aws.\\w+\\}\", \"\", resource_id)\n+        resource_id_no_vars = re.sub(r\"\\${aws.\\w+}\", \"\", resource_id)  # remove policy variables\n         if \":\" in resource_id_no_vars and not \":\" in arn_id:\n             return False\n \n",
+  "corrected_patch": "\ndiff --git a/parliament/__init__.py b/parliament/__init__.py\nindex 91dd4b3..82bf1f9 100644\n--- a/parliament/__init__.py\n+++ b/parliament/__init__.py\n@@ -116,7 +116,14 @@ def is_arn_match(resource_type, arn_format, resource):\n     if \"bucket\" in resource_type:\n         # We have to do a special case here for S3 buckets\n         if \"/\" in resource:\n-            return False\n+            # Match variables of the form ${aws:PrincipalTag/Namespace}\n+            variable_pattern = re.compile(r\"\\${aws:PrincipalTag/[^}]+}\")\n+            # Check if the resource contains any variables\n+            if variable_pattern.search(resource):\n+                # Expand the variables by replacing them with a wildcard\n+                resource = variable_pattern.sub(\"*\", resource)\n+            else:\n+                return False\n \n     # The ARN has at least 6 parts, separated by a colon. Ensure these exist.\n     arn_parts = arn_format.split(\":\")\n",
+  "passing_patch": "\ndiff --git a/parliament/__init__.py b/parliament/__init__.py\nindex 91dd4b3..82bf1f9 100644\n--- a/parliament/__init__.py\n+++ b/parliament/__init__.py\n@@ -116,7 +116,14 @@ def is_arn_match(resource_type, arn_format, resource):\n     if \"bucket\" in resource_type:\n         # We have to do a special case here for S3 buckets\n         if \"/\" in resource:\n-            return False\n+            # Match variables of the form ${aws:PrincipalTag/Namespace}\n+            variable_pattern = re.compile(r\"\\${aws:PrincipalTag/[^}]+}\")\n+            # Check if the resource contains any variables\n+            if variable_pattern.search(resource):\n+                # Expand the variables by replacing them with a wildcard\n+                resource = variable_pattern.sub(\"*\", resource)\n+            else:\n+                return False\n \n     # The ARN has at least 6 parts, separated by a colon. Ensure these exist.\n     arn_parts = arn_format.split(\":\")\n",
+  "before_similarity": 0.389,
+  "after_similarity": 1.0,
+  "improvement": 0.611,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "INDEX_MISMATCH",
+    "WRONG_ABSTRACTION_LEVEL",
+    "INDEX_MISALIGNMENT"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

@@ -1,0 +1,22 @@
+{
+  "instance_id": "recurly__recurly-client-python-372",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nError trying to cast error response\n**Describe the bug**\r\n\r\nSeems there is an error while trying to cast an error response due to a missing error class.\r\n\r\n**To Reproduce**\r\n\r\nI'm doing a preview request with a wrong zip code (we are using avalara here) and the raw response from the api is the following:\r\n\r\n```\r\n{\"error\":{\"type\":\"service_not_available\",\"message\":\"Tax service currently not available, please try again later.\"}}\r\n```\r\n\r\nThe exception I'm having with the python client is the ",
+  "what_went_wrong": "Agent misread the error type. Rule says: match fix to actual error message precisely.",
+  "failed_patch": "\ndiff --git a/recurly/resource.py b/recurly/resource.py\nindex a3b671c..b5c9c9f 100644\n--- a/recurly/resource.py\n+++ b/recurly/resource.py\n@@ -39,9 +39,13 @@ class Resource:\n         error_type = error.type\n         name_parts = error_type.split(\"_\")\n         class_name = \"\".join(x.title() for x in name_parts)\n+        if not class_name.endswith(\"Error\"):\n+            class_name += \"Error\"\n         if not class_name.endswith(\"Error\"):\n             class_name += \"Error\"\n         klass = locate(\"recurly.errors.%s\" % class_name)\n+        if klass is None:\n+            klass = locate(\"recurly.errors.ApiError\")\n         return klass(\n             error.message + \". Recurly Request Id: \" + response.request_id, error\n         )\n",
+  "corrected_patch": "\ndiff --git a/recurly/resource.py b/recurly/resource.py\nindex a3b671c..8d30db1 100644\n--- a/recurly/resource.py\n+++ b/recurly/resource.py\n@@ -2,6 +2,7 @@ from pydoc import locate\n import datetime\n from datetime import timezone\n import recurly\n+from recurly import ApiError\n import json\n import platform\n from .response import Response\n@@ -42,6 +43,9 @@ class Resource:\n         if not class_name.endswith(\"Error\"):\n             class_name += \"Error\"\n         klass = locate(\"recurly.errors.%s\" % class_name)\n+        klass = locate(\"recurly.errors.%s\" % class_name)\n+        if klass is None:\n+            klass = ApiError  # Default error class\n         return klass(\n             error.message + \". Recurly Request Id: \" + response.request_id, error\n         )\n",
+  "passing_patch": "\ndiff --git a/recurly/resource.py b/recurly/resource.py\nindex a3b671c..8d30db1 100644\n--- a/recurly/resource.py\n+++ b/recurly/resource.py\n@@ -2,6 +2,7 @@ from pydoc import locate\n import datetime\n from datetime import timezone\n import recurly\n+from recurly import ApiError\n import json\n import platform\n from .response import Response\n@@ -42,6 +43,9 @@ class Resource:\n         if not class_name.endswith(\"Error\"):\n             class_name += \"Error\"\n         klass = locate(\"recurly.errors.%s\" % class_name)\n+        klass = locate(\"recurly.errors.%s\" % class_name)\n+        if klass is None:\n+            klass = ApiError  # Default error class\n         return klass(\n             error.message + \". Recurly Request Id: \" + response.request_id, error\n         )\n",
+  "before_similarity": 0.357,
+  "after_similarity": 1.0,
+  "improvement": 0.643,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "WRONG_DIAGNOSIS",
+    "WRONG_ABSTRACTION_LEVEL"
+  ],
+  "rule_helped": true,
+  "agent_steps": 7
+}

@@ -1,0 +1,117 @@
+{
+  "total": 10,
+  "fixed": 8,
+  "improved": 7,
+  "rules_helped": 8,
+  "accuracy": 0.8,
+  "avg_before_similarity": 0.593,
+  "avg_after_similarity": 0.961,
+  "avg_improvement": 0.368,
+  "by_failure_type": {
+    "NO_TEST_USAGE": 9,
+    "WRONG_FIX": 1
+  },
+  "results": [
+    {
+      "instance_id": "duo-labs__parliament-185",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "INDEX_MISMATCH",
+        "WRONG_ABSTRACTION_LEVEL",
+        "INDEX_MISALIGNMENT"
+      ],
+      "before": 0.389,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "googleapis__python-bigquery-66",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "WRONG_ABSTRACTION_LEVEL"
+      ],
+      "before": 0.604,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "gouline__dbt-metabase-224",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "MISSING_ERROR_HANDLING"
+      ],
+      "before": 0.515,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "jsfehler__flake8-multiline-containers-128",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "WRONG_ABSTRACTION_LEVEL"
+      ],
+      "before": 0.174,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "oduwsdl__MementoEmbed-131",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "MISSING_ERROR_HANDLING"
+      ],
+      "before": 0.698,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "recurly__recurly-client-python-372",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "WRONG_DIAGNOSIS",
+        "WRONG_ABSTRACTION_LEVEL"
+      ],
+      "before": 0.357,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "reframe-hpc__reframe-2656",
+      "failure_type": "WRONG_FIX",
+      "rules_applied": [],
+      "before": 0.885,
+      "after": 0.885,
+      "fixed": false
+    },
+    {
+      "instance_id": "tenable__pyTenable-664",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "WRONG_DIAGNOSIS",
+        "MISSING_ERROR_HANDLING"
+      ],
+      "before": 0.586,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "websocket-client__websocket-client-929",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [],
+      "before": 0.721,
+      "after": 0.721,
+      "fixed": false
+    },
+    {
+      "instance_id": "zulip__zulip-terminal-1468",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "WRONG_DIAGNOSIS",
+        "INDEX_MISALIGNMENT"
+      ],
+      "before": 1.0,
+      "after": 1.0,
+      "fixed": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "instance_id": "gouline__dbt-metabase-224",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nExposures command fails. dbtmetabase/_exposures.py; Function: __extract_card_exposures(); dbt-metabase: 1.0.1\nWhen I run `dbt-metabase exposures` I get the following error:\r\n\r\n```bash\r\nTraceback (most recent call last):\r\n  File \"/pypoetry/virtualenvs/dbt-yDNzCqHh-py3.10/bin/dbt-metabase\", line 8, in <module>\r\n    sys.exit(cli())\r\n  File \"/pypoetry/virtualenvs/dbt-yDNzCqHh-py3.10/lib/python3.10/site-packages/click/core.py\", line 1157, in __call__\r\n    return self.main(*args, **kwargs)\r\n  F",
+  "what_went_wrong": "Agent assumed dict key exists. Rule says: check membership or use try/except.",
+  "failed_patch": "\ndiff --git a/dbtmetabase/_exposures.py b/dbtmetabase/_exposures.py\nindex c42c05a..a870f3f 100644\n--- a/dbtmetabase/_exposures.py\n+++ b/dbtmetabase/_exposures.py\n@@ -181,7 +181,7 @@ class ExposuresMixin(metaclass=ABCMeta):\n     ) -> Mapping:\n         \"\"\"Extracts exposures from Metabase questions.\"\"\"\n \n-        depends = []\n+        depends = {\"models\": []}\n         native_query = \"\"\n \n         query = card.get(\"dataset_query\", {})\n",
+  "corrected_patch": "\ndiff --git a/dbtmetabase/_exposures.py b/dbtmetabase/_exposures.py\nindex c42c05a..246f5fb 100644\n--- a/dbtmetabase/_exposures.py\n+++ b/dbtmetabase/_exposures.py\n@@ -250,6 +250,7 @@ class ExposuresMixin(metaclass=ABCMeta):\n         return {\n             \"depends\": depends,\n             \"native_query\": native_query,\n+            \"models\": {depend: {} for depend in depends},  # Add a \"models\" key with empty values for each depend\n         }\n \n     def __format_exposure(\n",
+  "passing_patch": "\ndiff --git a/dbtmetabase/_exposures.py b/dbtmetabase/_exposures.py\nindex c42c05a..246f5fb 100644\n--- a/dbtmetabase/_exposures.py\n+++ b/dbtmetabase/_exposures.py\n@@ -250,6 +250,7 @@ class ExposuresMixin(metaclass=ABCMeta):\n         return {\n             \"depends\": depends,\n             \"native_query\": native_query,\n+            \"models\": {depend: {} for depend in depends},  # Add a \"models\" key with empty values for each depend\n         }\n \n     def __format_exposure(\n",
+  "before_similarity": 0.515,
+  "after_similarity": 1.0,
+  "improvement": 0.485,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "MISSING_ERROR_HANDLING"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

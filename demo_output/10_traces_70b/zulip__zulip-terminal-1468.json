@@ -1,0 +1,22 @@
+{
+  "instance_id": "zulip__zulip-terminal-1468",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\n[bug] crash when editing message\nServer: Zulip cloud server\r\nClient: main branch\r\nPython: 3.11\r\nself.model.initial_data: `{'zulip_version': '9.0-dev-642-g9d469357ea', 'zulip_feature_level': 237, 'zulip_merge_base': '9.0-dev-605-g47a5459637', 'realm_message_content_edit_limit_seconds': None}`\r\nlog:\r\n```\r\nTraceback (most recent call last):\r\n  File \"/data/data/com.termux/files/home/.local/share/pipx/venvs/zulip-term/lib/python3.11/site-packages/zulipterminal/cli/run.py\", line 578, in main\r\n ",
+  "what_went_wrong": "Agent misread the error type. Rule says: match fix to actual error message precisely.",
+  "failed_patch": "\ndiff --git a/zulipterminal/ui_tools/messages.py b/zulipterminal/ui_tools/messages.py\nindex 1a9bb9d..dff7b33 100644\n--- a/zulipterminal/ui_tools/messages.py\n+++ b/zulipterminal/ui_tools/messages.py\n@@ -1045,7 +1045,7 @@ class MessageBox(urwid.Pile):\n             # the time limit. A limit of 0 signifies no limit\n             # on message body editing.\n             msg_body_edit_enabled = True\n-            if self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] > 0:\n+            if self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] is not None and self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] > 0:\n                 if self.message[\"sender_id\"] == self.model.user_id:\n                     time_since_msg_sent = time() - self.message[\"timestamp\"]\n                     edit_time_limit = self.model.initial_data[\n",
+  "corrected_patch": "\ndiff --git a/zulipterminal/ui_tools/messages.py b/zulipterminal/ui_tools/messages.py\nindex 1a9bb9d..dff7b33 100644\n--- a/zulipterminal/ui_tools/messages.py\n+++ b/zulipterminal/ui_tools/messages.py\n@@ -1045,7 +1045,7 @@ class MessageBox(urwid.Pile):\n             # the time limit. A limit of 0 signifies no limit\n             # on message body editing.\n             msg_body_edit_enabled = True\n-            if self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] > 0:\n+            if self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] is not None and self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] > 0:\n                 if self.message[\"sender_id\"] == self.model.user_id:\n                     time_since_msg_sent = time() - self.message[\"timestamp\"]\n                     edit_time_limit = self.model.initial_data[\n",
+  "passing_patch": "\ndiff --git a/zulipterminal/ui_tools/messages.py b/zulipterminal/ui_tools/messages.py\nindex 1a9bb9d..dff7b33 100644\n--- a/zulipterminal/ui_tools/messages.py\n+++ b/zulipterminal/ui_tools/messages.py\n@@ -1045,7 +1045,7 @@ class MessageBox(urwid.Pile):\n             # the time limit. A limit of 0 signifies no limit\n             # on message body editing.\n             msg_body_edit_enabled = True\n-            if self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] > 0:\n+            if self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] is not None and self.model.initial_data[\"realm_message_content_edit_limit_seconds\"] > 0:\n                 if self.message[\"sender_id\"] == self.model.user_id:\n                     time_since_msg_sent = time() - self.message[\"timestamp\"]\n                     edit_time_limit = self.model.initial_data[\n",
+  "before_similarity": 1.0,
+  "after_similarity": 1.0,
+  "improvement": 0.0,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "WRONG_DIAGNOSIS",
+    "INDEX_MISALIGNMENT"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

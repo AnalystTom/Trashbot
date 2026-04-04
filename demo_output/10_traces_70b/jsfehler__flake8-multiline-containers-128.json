@@ -1,0 +1,21 @@
+{
+  "instance_id": "jsfehler__flake8-multiline-containers-128",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nFalse positives inside multiline string\nI evaluated `flake8-multiline-containers 0.0.19` and running it on the following code raises two warnings:\r\n```\r\nfoo = \"\"\"\r\n(lorem\r\n ) lorem ipsum!\r\n\"\"\"\r\n```\r\n\r\n```\r\ntest.py:2:6: JS101 Multi-line container not broken after opening character\r\ntest.py:3:2: JS102 Multi-line container does not close on same column as opening\r\n```\r\n\r\nAs there are no containers and hence no multi-line containers in this code I see these as false positives.",
+  "what_went_wrong": "Agent implemented check at wrong layer. Rule says: validate at public API entry point.",
+  "failed_patch": "\ndiff --git a/test.py b/test.py\nnew file mode 100644\nindex 0000000..db2a5f0\n--- /dev/null\n+++ b/test.py\n@@ -0,0 +1,4 @@\n+foo = \"\"\"\n+(lorem\n+ ) lorem ipsum!\n+\"\"\"\n",
+  "corrected_patch": "\ndiff --git a/flake8_multiline_containers.py b/flake8_multiline_containers.py\nindex e96b0b9..94b6b4e 100644\n--- a/flake8_multiline_containers.py\n+++ b/flake8_multiline_containers.py\n@@ -113,6 +113,8 @@ class MultilineContainers:\n         open_times = line.count(open_character)\n         close_times = line.count(close_character)\n \n+        if open_times == 1 and close_times == 0 and open_character == '(':\n+            return 0, 0, line\n         return open_times, close_times, line\n \n     def _check_opening(\n",
+  "passing_patch": "\ndiff --git a/flake8_multiline_containers.py b/flake8_multiline_containers.py\nindex e96b0b9..94b6b4e 100644\n--- a/flake8_multiline_containers.py\n+++ b/flake8_multiline_containers.py\n@@ -113,6 +113,8 @@ class MultilineContainers:\n         open_times = line.count(open_character)\n         close_times = line.count(close_character)\n \n+        if open_times == 1 and close_times == 0 and open_character == '(':\n+            return 0, 0, line\n         return open_times, close_times, line\n \n     def _check_opening(\n",
+  "before_similarity": 0.174,
+  "after_similarity": 1.0,
+  "improvement": 0.826,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "WRONG_ABSTRACTION_LEVEL"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

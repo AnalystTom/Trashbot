@@ -1,0 +1,21 @@
+{
+  "instance_id": "ebmdatalab__datalab-pandas-29",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\n`bq.cached_read` fails confusingly if parent directory doesn't exist\nIf the parent of `csv_path` (which is `csv_dir` below) doesn't exist then this line throws an error:\r\nhttps://github.com/ebmdatalab/datalab-pandas/blob/92099b8c8ea47616545c42a0dc8a394348979103/ebmdatalab/bq.py#L49-L51\r\n\r\nGiven that this is usually called from a notebook and it's already slightly confusing as to what the current working directory is, this creates even more confusion.\r\n\r\nThe function should either:\r\n * Aut",
+  "what_went_wrong": "Rule WRONG_PLACEMENT matched but no specific correction generated.",
+  "failed_patch": "\ndiff --git a/ebmdatalab/bq.py b/ebmdatalab/bq.py\nindex f6709a9..8234e52 100644\n--- a/ebmdatalab/bq.py\n+++ b/ebmdatalab/bq.py\n@@ -29,7 +29,9 @@ def cached_read(sql, csv_path=None, use_cache=True, **kwargs):\n     file\n \n     \"\"\"\n-    assert csv_path, \"You must supply csv_path\"\n+    csv_dir, csv_filename = os.path.split(csv_path)\n+    if not os.path.exists(csv_dir):\n+        raise ValueError(\"Parent directory of csv_path does not exist: \" + csv_dir)\n     defaults = {\"project_id\": \"ebmdatalab\", \"dialect\": \"standard\"}\n     defaults.update(kwargs)\n     fingerprint = fingerprint_sql(sql)\n",
+  "corrected_patch": "\ndiff --git a/ebmdatalab/bq.py b/ebmdatalab/bq.py\nindex f6709a9..6ecb9c9 100644\n--- a/ebmdatalab/bq.py\n+++ b/ebmdatalab/bq.py\n@@ -34,6 +34,8 @@ def cached_read(sql, csv_path=None, use_cache=True, **kwargs):\n     defaults.update(kwargs)\n     fingerprint = fingerprint_sql(sql)\n     csv_dir, csv_filename = os.path.split(csv_path)\n+    if not os.path.exists(csv_dir):\n+        os.makedirs(csv_dir)\n     fingerprint_path = os.path.join(\n         csv_dir, \".\" + csv_filename + \".\" + fingerprint + \".tmp\"\n     )\n",
+  "passing_patch": "\ndiff --git a/ebmdatalab/bq.py b/ebmdatalab/bq.py\nindex f6709a9..6ecb9c9 100644\n--- a/ebmdatalab/bq.py\n+++ b/ebmdatalab/bq.py\n@@ -34,6 +34,8 @@ def cached_read(sql, csv_path=None, use_cache=True, **kwargs):\n     defaults.update(kwargs)\n     fingerprint = fingerprint_sql(sql)\n     csv_dir, csv_filename = os.path.split(csv_path)\n+    if not os.path.exists(csv_dir):\n+        os.makedirs(csv_dir)\n     fingerprint_path = os.path.join(\n         csv_dir, \".\" + csv_filename + \".\" + fingerprint + \".tmp\"\n     )\n",
+  "before_similarity": 0.471,
+  "after_similarity": 1.0,
+  "improvement": 0.529,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "WRONG_PLACEMENT"
+  ],
+  "rule_helped": false,
+  "agent_steps": 9
+}

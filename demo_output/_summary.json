@@ -1,0 +1,122 @@
+{
+  "total": 10,
+  "fixed": 10,
+  "improved": 10,
+  "rules_helped": 9,
+  "accuracy": 1.0,
+  "avg_before_similarity": 0.511,
+  "avg_after_similarity": 1.0,
+  "avg_improvement": 0.489,
+  "by_failure_type": {
+    "NO_TEST_USAGE": 9,
+    "WRONG_FIX": 1
+  },
+  "results": [
+    {
+      "instance_id": "INM-6__python-odmltables-120",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "INDEX_MISMATCH",
+        "UNSAFE_VARIABLE_ACCESS",
+        "MISSING_ERROR_HANDLING"
+      ],
+      "before": 0.341,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "adamboche__python-marshmallow-union-33",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "INCOMPLETE_FIX",
+        "MISSING_ERROR_HANDLING"
+      ],
+      "before": 0.894,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "blairconrad__dicognito-158",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "MISSING_ERROR_HANDLING",
+        "INDEX_MISALIGNMENT",
+        "SEMANTICS_ERROR"
+      ],
+      "before": 0.15,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "d3dave__cough-3",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "INDEX_MISMATCH"
+      ],
+      "before": 0.449,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "django-money__django-money-689",
+      "failure_type": "WRONG_FIX",
+      "rules_applied": [
+        "WRONG_ABSTRACTION_LEVEL"
+      ],
+      "before": 0.295,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "ebmdatalab__datalab-pandas-29",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "WRONG_PLACEMENT"
+      ],
+      "before": 0.471,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "iterative__dvc-8554",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "WRONG_DIAGNOSIS"
+      ],
+      "before": 0.437,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "mie-lab__trackintel-408",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "INDEX_MISALIGNMENT",
+        "INDEX_MISMATCH"
+      ],
+      "before": 0.951,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "pytorch__ignite-1044",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "SEMANTICS_ERROR"
+      ],
+      "before": 0.85,
+      "after": 1.0,
+      "fixed": true
+    },
+    {
+      "instance_id": "repobee__repobee-457",
+      "failure_type": "NO_TEST_USAGE",
+      "rules_applied": [
+        "INCOMPLETE_CLEANUP"
+      ],
+      "before": 0.272,
+      "after": 1.0,
+      "fixed": true
+    }
+  ]
+}

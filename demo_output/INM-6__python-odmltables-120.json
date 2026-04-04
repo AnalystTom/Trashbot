@@ -1,0 +1,23 @@
+{
+  "instance_id": "INM-6__python-odmltables-120",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nError when converting empty (apart from header) csv file\n'row_id' is undefined here when the csv file only contains a header:\r\n\r\nhttps://github.com/INM-6/python-odmltables/blob/f9787990e4865f222fb072e8c5c84f96a2bada6c/odmltables/odml_table.py#L492",
+  "what_went_wrong": "Not all iterations append an entry. Rule says: ensure ALL iterations maintain length parity.",
+  "failed_patch": "\ndiff --git a/odmltables/odml_table.py b/odmltables/odml_table.py\nindex 7ac58aa..70a9f61 100644\n--- a/odmltables/odml_table.py\n+++ b/odmltables/odml_table.py\n@@ -413,7 +413,12 @@ class OdmlTable(object):\n                     raise IOError('Csv file does not contain header row.'\n                                   ' Filename \"%s\"' % load_from)\n \n-            # get column ids of non-empty header cells\n+            # check if there are any rows after the header\n+            try:\n+                next(csvreader)\n+            except StopIteration:\n+                # handle the case where the file is empty apart from the header\n+                pass\n             header_title_order = {id: inv_header_titles[h] for id, h in\n                                   enumerate(row) if h != ''}\n \n",
+  "corrected_patch": "\ndiff --git a/odmltables/odml_table.py b/odmltables/odml_table.py\nindex 7ac58aa..f21c954 100644\n--- a/odmltables/odml_table.py\n+++ b/odmltables/odml_table.py\n@@ -489,7 +489,7 @@ class OdmlTable(object):\n                     current_dic = new_dic\n \n             # copy final property\n-            if row_id == 0:\n+            if 'row_id' in locals() and row_id == 0:\n                 self._odmldict.append(copy.deepcopy(new_dic))\n             else:\n                 self._odmldict.append(copy.deepcopy(current_dic))\n",
+  "passing_patch": "\ndiff --git a/odmltables/odml_table.py b/odmltables/odml_table.py\nindex 7ac58aa..f21c954 100644\n--- a/odmltables/odml_table.py\n+++ b/odmltables/odml_table.py\n@@ -489,7 +489,7 @@ class OdmlTable(object):\n                     current_dic = new_dic\n \n             # copy final property\n-            if row_id == 0:\n+            if 'row_id' in locals() and row_id == 0:\n                 self._odmldict.append(copy.deepcopy(new_dic))\n             else:\n                 self._odmldict.append(copy.deepcopy(current_dic))\n",
+  "before_similarity": 0.341,
+  "after_similarity": 1.0,
+  "improvement": 0.659,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "INDEX_MISMATCH",
+    "UNSAFE_VARIABLE_ACCESS",
+    "MISSING_ERROR_HANDLING"
+  ],
+  "rule_helped": true,
+  "agent_steps": 17
+}

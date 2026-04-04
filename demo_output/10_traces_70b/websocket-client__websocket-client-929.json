@@ -1,0 +1,19 @@
+{
+  "instance_id": "websocket-client__websocket-client-929",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nEnvironment variable HTTP_PROXY is used for HTTPS connections\nThe problem occurred in an environment where a proxy server is to be used for HTTP connections but not for HTTPS connections.\r\nIn this case `http_proxy` is set in the environment but `https_proxy` is not.\r\nThe problematic code is here:\r\n\r\nhttps://github.com/websocket-client/websocket-client/blob/bd506ad2e14749e1d31c07a1a6fca5644adb0ec4/websocket/_url.py#L161-L163\r\n\r\nIn my opinion, only `https_proxy` should be used for secure co",
+  "what_went_wrong": "No matching rule found",
+  "failed_patch": "\ndiff --git a/websocket/_url.py b/websocket/_url.py\nindex 259ce64..b26f63e 100644\n--- a/websocket/_url.py\n+++ b/websocket/_url.py\n@@ -158,7 +158,7 @@ def get_proxy_info(\n         auth = proxy_auth\n         return proxy_host, port, auth\n \n-    env_keys = [\"http_proxy\"]\n+    env_keys = [\"https_proxy\"]\n     if is_secure:\n         env_keys.insert(0, \"https_proxy\")\n \n",
+  "corrected_patch": "\ndiff --git a/websocket/_url.py b/websocket/_url.py\nindex 259ce64..b26f63e 100644\n--- a/websocket/_url.py\n+++ b/websocket/_url.py\n@@ -158,7 +158,7 @@ def get_proxy_info(\n         auth = proxy_auth\n         return proxy_host, port, auth\n \n-    env_keys = [\"http_proxy\"]\n+    env_keys = [\"https_proxy\"]\n     if is_secure:\n         env_keys.insert(0, \"https_proxy\")\n \n",
+  "passing_patch": "\ndiff --git a/websocket/_url.py b/websocket/_url.py\nindex 259ce64..320aed2 100644\n--- a/websocket/_url.py\n+++ b/websocket/_url.py\n@@ -158,9 +158,10 @@ def get_proxy_info(\n         auth = proxy_auth\n         return proxy_host, port, auth\n \n-    env_keys = [\"http_proxy\"]\n     if is_secure:\n-        env_keys.insert(0, \"https_proxy\")\n+        env_keys = [\"https_proxy\"]\n+    else:\n+        env_keys = [\"http_proxy\"]\n \n     for key in env_keys:\n         value = os.environ.get(key, os.environ.get(key.upper(), \"\")).replace(\" \", \"\")\n",
+  "before_similarity": 0.721,
+  "after_similarity": 0.721,
+  "improvement": 0.0,
+  "patch_matches_correct": false,
+  "rules_applied": [],
+  "rule_helped": false,
+  "agent_steps": 9
+}

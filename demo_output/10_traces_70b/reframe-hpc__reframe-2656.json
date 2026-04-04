@@ -1,0 +1,17 @@
+{
+  "instance_id": "reframe-hpc__reframe-2656",
+  "failure_type": "WRONG_FIX",
+  "failure_signals": [],
+  "issue_text": "ISSUE:\nChange of behaviour in Slurm version 22.05\nFrom the release notes: https://slurm.schedmd.com/news.html\r\n```\r\nRELEASE NOTES FOR SLURM VERSION 22.05\r\n...\r\n-- srun will no longer read in SLURM_CPUS_PER_TASK. This means you will\r\n    implicitly have to specify --cpus-per-task on your srun calls, or set the\r\n    new SRUN_CPUS_PER_TASK env var to accomplish the same thing.\r\n```\r\n\r\nTo achieve the same behavior as before we need either to pass explicitly `--cpus-per-task=$SLURM_CPUS_PER_TASK` or ",
+  "what_went_wrong": "No matching rule found",
+  "failed_patch": "\ndiff --git a/reframe/core/launchers/mpi.py b/reframe/core/launchers/mpi.py\nindex 633a1c05..fda6b99f 100644\n--- a/reframe/core/launchers/mpi.py\n+++ b/reframe/core/launchers/mpi.py\n@@ -11,7 +11,7 @@ from reframe.utility import seconds_to_hms\n @register_launcher('srun')\n class SrunLauncher(JobLauncher):\n     def command(self, job):\n-        return ['srun']\n+        return ['srun', '--cpus-per-task=%s' % job.num_cpus_per_task]\n \n \n @register_launcher('ibrun')\n",
+  "corrected_patch": "\ndiff --git a/reframe/core/launchers/mpi.py b/reframe/core/launchers/mpi.py\nindex 633a1c05..fda6b99f 100644\n--- a/reframe/core/launchers/mpi.py\n+++ b/reframe/core/launchers/mpi.py\n@@ -11,7 +11,7 @@ from reframe.utility import seconds_to_hms\n @register_launcher('srun')\n class SrunLauncher(JobLauncher):\n     def command(self, job):\n-        return ['srun']\n+        return ['srun', '--cpus-per-task=%s' % job.num_cpus_per_task]\n \n \n @register_launcher('ibrun')\n",
+  "passing_patch": "\ndiff --git a/reframe/core/launchers/mpi.py b/reframe/core/launchers/mpi.py\nindex 633a1c05..aba4788d 100644\n--- a/reframe/core/launchers/mpi.py\n+++ b/reframe/core/launchers/mpi.py\n@@ -11,7 +11,10 @@ from reframe.utility import seconds_to_hms\n @register_launcher('srun')\n class SrunLauncher(JobLauncher):\n     def command(self, job):\n-        return ['srun']\n+        cmd = ['srun']\n+        if job.num_cpus_per_task:\n+            cmd += ['--cpus-per-task=%s' % str(job.num_cpus_per_task)]\n+        return cmd\n \n \n @register_launcher('ibrun')\n",
+  "before_similarity": 0.885,
+  "after_similarity": 0.885,
+  "improvement": 0.0,
+  "patch_matches_correct": false,
+  "rules_applied": [],
+  "rule_helped": false,
+  "agent_steps": 13
+}

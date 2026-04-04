@@ -1,0 +1,22 @@
+{
+  "instance_id": "adamboche__python-marshmallow-union-33",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\n_serialize ignores the given value\nThe `_serialize` method of `Union` calls the `serialize` method (instead of `_serialize`) on the underlying fields. This means that it ignores the given `value` parameter, and may try to serialize a completely different value.\r\n\r\nSee: https://github.com/adamboche/python-marshmallow-union/blob/master/src/marshmallow_union/__init__.py#L66-L68\r\n\r\nInitially reported in: https://github.com/lovasoa/marshmallow_dataclass/issues/67",
+  "what_went_wrong": "Agent changed method name but not argument signature, or vice versa.",
+  "failed_patch": "\ndiff --git a/src/marshmallow_union/__init__.py b/src/marshmallow_union/__init__.py\nindex 22d5ef4..3df8547 100644\n--- a/src/marshmallow_union/__init__.py\n+++ b/src/marshmallow_union/__init__.py\n@@ -64,7 +64,7 @@ class Union(marshmallow.fields.Field):\n \n             try:\n                 return candidate_field.serialize(\n-                    attr, obj, error_store=error_store, **kwargs\n+                    value, error_store=error_store, **kwargs\n                 )\n             except ValueError as e:\n                 error_store.store_error({attr: e})\n",
+  "corrected_patch": "\ndiff --git a/src/marshmallow_union/__init__.py b/src/marshmallow_union/__init__.py\nindex 22d5ef4..6dbbb8b 100644\n--- a/src/marshmallow_union/__init__.py\n+++ b/src/marshmallow_union/__init__.py\n@@ -63,8 +63,8 @@ class Union(marshmallow.fields.Field):\n         for candidate_field in fields:\n \n             try:\n-                return candidate_field.serialize(\n-                    attr, obj, error_store=error_store, **kwargs\n+                return candidate_field._serialize(\n+                    value, attr, obj, error_store=error_store, **kwargs\n                 )\n             except ValueError as e:\n                 error_store.store_error({attr: e})\n",
+  "passing_patch": "\ndiff --git a/src/marshmallow_union/__init__.py b/src/marshmallow_union/__init__.py\nindex 22d5ef4..6dbbb8b 100644\n--- a/src/marshmallow_union/__init__.py\n+++ b/src/marshmallow_union/__init__.py\n@@ -63,8 +63,8 @@ class Union(marshmallow.fields.Field):\n         for candidate_field in fields:\n \n             try:\n-                return candidate_field.serialize(\n-                    attr, obj, error_store=error_store, **kwargs\n+                return candidate_field._serialize(\n+                    value, attr, obj, error_store=error_store, **kwargs\n                 )\n             except ValueError as e:\n                 error_store.store_error({attr: e})\n",
+  "before_similarity": 0.894,
+  "after_similarity": 1.0,
+  "improvement": 0.106,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "INCOMPLETE_FIX",
+    "MISSING_ERROR_HANDLING"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

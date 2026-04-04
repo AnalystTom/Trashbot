@@ -1,0 +1,21 @@
+{
+  "instance_id": "oduwsdl__MementoEmbed-131",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nException while searching for favicon\nMementoEmbed throws an exception for the following URI-M:\r\n* http://wayback.archive-it.org/4887/20141104211213/http://time.com/3502740/ebola-virus-1976/\r\n\r\nHere is the log entry:\r\n```\r\n[2018-09-06 14:07:36,093 -0600 ] - ERROR - [ /services/product/socialcard/http://wayback.archive-it.org/4887/20141104211213/http://time.com/3502740/ebola-virus-1976/ ]: mementoembed.services.errors - An unforeseen error has occurred\r\nTraceback (most recent call last):\r\n",
+  "what_went_wrong": "Agent assumed dict key exists. Rule says: check membership or use try/except.",
+  "failed_patch": "\ndiff --git a/mementoembed/favicon.py b/mementoembed/favicon.py\nindex 60203f0..33876dc 100644\n--- a/mementoembed/favicon.py\n+++ b/mementoembed/favicon.py\n@@ -52,7 +52,7 @@ def get_favicon_from_html(content):\n \n     for link in links:\n \n-        if 'icon' in link['rel']:\n+        if 'rel' in link and 'icon' in link['rel']:\n             favicon_uri = link['href']\n             break\n \n",
+  "corrected_patch": "\ndiff --git a/mementoembed/favicon.py b/mementoembed/favicon.py\nindex 60203f0..04cad24 100644\n--- a/mementoembed/favicon.py\n+++ b/mementoembed/favicon.py\n@@ -52,7 +52,7 @@ def get_favicon_from_html(content):\n \n     for link in links:\n \n-        if 'icon' in link['rel']:\n+        if link.has_attr('rel') and 'icon' in link['rel']:\n             favicon_uri = link['href']\n             break\n \n@@ -61,7 +61,7 @@ def get_favicon_from_html(content):\n \n         for link in links:\n \n-            if 'shortcut' in link['rel']:\n+            if link.has_attr('rel') and'shortcut' in link['rel']:\n                 favicon_uri = link['href']\n                 break\n \n",
+  "passing_patch": "\ndiff --git a/mementoembed/favicon.py b/mementoembed/favicon.py\nindex 60203f0..04cad24 100644\n--- a/mementoembed/favicon.py\n+++ b/mementoembed/favicon.py\n@@ -52,7 +52,7 @@ def get_favicon_from_html(content):\n \n     for link in links:\n \n-        if 'icon' in link['rel']:\n+        if link.has_attr('rel') and 'icon' in link['rel']:\n             favicon_uri = link['href']\n             break\n \n@@ -61,7 +61,7 @@ def get_favicon_from_html(content):\n \n         for link in links:\n \n-            if 'shortcut' in link['rel']:\n+            if link.has_attr('rel') and'shortcut' in link['rel']:\n                 favicon_uri = link['href']\n                 break\n \n",
+  "before_similarity": 0.698,
+  "after_similarity": 1.0,
+  "improvement": 0.302,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "MISSING_ERROR_HANDLING"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

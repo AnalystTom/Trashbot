@@ -1,0 +1,21 @@
+{
+  "instance_id": "pytorch__ignite-1044",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\ngpu_info crashes because it cannot parse \"N/A\"\n## \ud83d\udc1b Bug description\r\n\r\nWhen trying to use gpu_info, it throws:\r\n\r\n```\r\n File \"/home/blackhc/anaconda3/envs/hello-mnist/lib/python3.7/site-packages/ignite/contrib/metrics/gpu_info.py\", line 91, in completed\r\n    engine.state.metrics[util_name] = int(util_report['gpu_util'])\r\nValueError: invalid literal for int() with base 10: 'N/A'\r\n```\r\n\r\nThere is error handling code above it, but it does not catch the issue (\"N/A\" is returned).\r\n\r\nI assume ",
+  "what_went_wrong": "Failed patch substituted a default or warning. Should skip the bad value entirely.",
+  "failed_patch": "\ndiff --git a/ignite/contrib/metrics/gpu_info.py b/ignite/contrib/metrics/gpu_info.py\nindex d4b60df2..3d362026 100644\n--- a/ignite/contrib/metrics/gpu_info.py\n+++ b/ignite/contrib/metrics/gpu_info.py\n@@ -94,7 +94,9 @@ class GpuInfo(Metric):\n                 )\n                 continue\n \n-            engine.state.metrics[util_name] = int(util_report[\"gpu_util\"])\n+            if util_report[\"gpu_util\"] == \"N/A\":\n+                warnings.warn(\"GPU utilization information not available\")\n+                continue\n \n     def attach(self, engine, name=\"gpu\", event_name=Events.ITERATION_COMPLETED):\n         engine.add_event_handler(event_name, self.completed, name)\n",
+  "corrected_patch": "\ndiff --git a/ignite/contrib/metrics/gpu_info.py b/ignite/contrib/metrics/gpu_info.py\nindex d4b60df2..0210c732 100644\n--- a/ignite/contrib/metrics/gpu_info.py\n+++ b/ignite/contrib/metrics/gpu_info.py\n@@ -94,7 +94,9 @@ class GpuInfo(Metric):\n                 )\n                 continue\n \n-            engine.state.metrics[util_name] = int(util_report[\"gpu_util\"])\n+            if util_report['gpu_util'] == 'N/A':\n+                continue\n+            engine.state.metrics[util_name] = int(util_report['gpu_util'])\n \n     def attach(self, engine, name=\"gpu\", event_name=Events.ITERATION_COMPLETED):\n         engine.add_event_handler(event_name, self.completed, name)\n",
+  "passing_patch": "\ndiff --git a/ignite/contrib/metrics/gpu_info.py b/ignite/contrib/metrics/gpu_info.py\nindex d4b60df2..0210c732 100644\n--- a/ignite/contrib/metrics/gpu_info.py\n+++ b/ignite/contrib/metrics/gpu_info.py\n@@ -94,7 +94,9 @@ class GpuInfo(Metric):\n                 )\n                 continue\n \n-            engine.state.metrics[util_name] = int(util_report[\"gpu_util\"])\n+            if util_report['gpu_util'] == 'N/A':\n+                continue\n+            engine.state.metrics[util_name] = int(util_report['gpu_util'])\n \n     def attach(self, engine, name=\"gpu\", event_name=Events.ITERATION_COMPLETED):\n         engine.add_event_handler(event_name, self.completed, name)\n",
+  "before_similarity": 0.85,
+  "after_similarity": 1.0,
+  "improvement": 0.15,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "SEMANTICS_ERROR"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

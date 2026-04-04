@@ -1,0 +1,22 @@
+{
+  "instance_id": "mie-lab__trackintel-408",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nBug in location_identifier for pre_filter=False and non-serial index\nThe function [location_identifier](https://github.com/mie-lab/trackintel/blob/master/trackintel/analysis/location_identification.py#L7) assumes that an index is serial e.g., incremental from 0 to n. It throws an error in fthe index is not serial and sorts the dataframe (may not be intended) if the index is serial but not in order.\r\n\r\nThe problem is that for `pre_filter=False` [here](https://github.com/mie-lab/trackintel/",
+  "what_went_wrong": "Boolean Series index doesn't match DataFrame index. Rule says: ensure same index.",
+  "failed_patch": "\ndiff --git a/trackintel/analysis/location_identification.py b/trackintel/analysis/location_identification.py\nindex 33e691c..0cdd3f1 100644\n--- a/trackintel/analysis/location_identification.py\n+++ b/trackintel/analysis/location_identification.py\n@@ -62,7 +62,7 @@ def location_identifier(staypoints, method=\"FREQ\", pre_filter=True, **pre_filter\n     if pre_filter:\n         f = pre_filter_locations(sp, **pre_filter_kwargs)\n     else:\n-        f = pd.Series(np.full(len(sp.index), True))\n+        f = pd.Series(sp.index, dtype=bool)\n \n     if method == \"FREQ\":\n         method_val = freq_method(sp[f], \"home\", \"work\")\n",
+  "corrected_patch": "\ndiff --git a/trackintel/analysis/location_identification.py b/trackintel/analysis/location_identification.py\nindex 33e691c..6682e4a 100644\n--- a/trackintel/analysis/location_identification.py\n+++ b/trackintel/analysis/location_identification.py\n@@ -62,7 +62,7 @@ def location_identifier(staypoints, method=\"FREQ\", pre_filter=True, **pre_filter\n     if pre_filter:\n         f = pre_filter_locations(sp, **pre_filter_kwargs)\n     else:\n-        f = pd.Series(np.full(len(sp.index), True))\n+        f = pd.Series(np.full(len(sp.index), True), index=sp.index)\n \n     if method == \"FREQ\":\n         method_val = freq_method(sp[f], \"home\", \"work\")\n",
+  "passing_patch": "\ndiff --git a/trackintel/analysis/location_identification.py b/trackintel/analysis/location_identification.py\nindex 33e691c..6682e4a 100644\n--- a/trackintel/analysis/location_identification.py\n+++ b/trackintel/analysis/location_identification.py\n@@ -62,7 +62,7 @@ def location_identifier(staypoints, method=\"FREQ\", pre_filter=True, **pre_filter\n     if pre_filter:\n         f = pre_filter_locations(sp, **pre_filter_kwargs)\n     else:\n-        f = pd.Series(np.full(len(sp.index), True))\n+        f = pd.Series(np.full(len(sp.index), True), index=sp.index)\n \n     if method == \"FREQ\":\n         method_val = freq_method(sp[f], \"home\", \"work\")\n",
+  "before_similarity": 0.951,
+  "after_similarity": 1.0,
+  "improvement": 0.049,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "INDEX_MISALIGNMENT",
+    "INDEX_MISMATCH"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}

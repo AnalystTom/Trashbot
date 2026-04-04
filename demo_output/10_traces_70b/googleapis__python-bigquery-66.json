@@ -1,0 +1,21 @@
+{
+  "instance_id": "googleapis__python-bigquery-66",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nBigquery: Model reference repr seems wrong for model_id\nFor `ModelReference`'s repr use project_id against model_id\r\n\r\nhttps://github.com/googleapis/python-bigquery/blob/be5c8b1ede9a2d762fd5574c32587d125eca4713/google/cloud/bigquery/model.py#L432-L435",
+  "what_went_wrong": "Agent implemented check at wrong layer. Rule says: validate at public API entry point.",
+  "failed_patch": "\ndiff --git a/google/cloud/bigquery/model.py b/google/cloud/bigquery/model.py\nindex d39ec5f2..634a705a 100644\n--- a/google/cloud/bigquery/model.py\n+++ b/google/cloud/bigquery/model.py\n@@ -430,6 +430,6 @@ class ModelReference(object):\n         return hash(self._key())\n \n     def __repr__(self):\n-        return \"ModelReference(project='{}', dataset_id='{}', project_id='{}')\".format(\n+        return \"ModelReference(project='{}', dataset_id='{}', model_id='{}')\".format(\n             self.project, self.dataset_id, self.model_id\n         )\n",
+  "corrected_patch": "\ndiff --git a/google/cloud/bigquery/model.py b/google/cloud/bigquery/model.py\nindex d39ec5f2..12c97758 100644\n--- a/google/cloud/bigquery/model.py\n+++ b/google/cloud/bigquery/model.py\n@@ -333,7 +333,10 @@ class ModelReference(object):\n     def project(self):\n         \"\"\"str: Project bound to the model\"\"\"\n         return self._proto.project_id\n-\n+    @property\n+    def project_id(self):\n+        \"\"\"str: Project ID bound to the model\"\"\"\n+        return self._proto.project_id\n     @property\n     def dataset_id(self):\n         \"\"\"str: ID of dataset containing the model.\"\"\"\n@@ -430,6 +433,6 @@ class ModelReference(object):\n         return hash(self._key())\n \n     def __repr__(self):\n-        return \"ModelReference(project='{}', dataset_id='{}', project_id='{}')\".format(\n-            self.project, self.dataset_id, self.model_id\n+        return \"ModelReference(project_id='{}', dataset_id='{}', model_id='{}')\".format(\n+            self.project_id, self.dataset_id, self.model_id\n         )\n",
+  "passing_patch": "\ndiff --git a/google/cloud/bigquery/model.py b/google/cloud/bigquery/model.py\nindex d39ec5f2..12c97758 100644\n--- a/google/cloud/bigquery/model.py\n+++ b/google/cloud/bigquery/model.py\n@@ -333,7 +333,10 @@ class ModelReference(object):\n     def project(self):\n         \"\"\"str: Project bound to the model\"\"\"\n         return self._proto.project_id\n-\n+    @property\n+    def project_id(self):\n+        \"\"\"str: Project ID bound to the model\"\"\"\n+        return self._proto.project_id\n     @property\n     def dataset_id(self):\n         \"\"\"str: ID of dataset containing the model.\"\"\"\n@@ -430,6 +433,6 @@ class ModelReference(object):\n         return hash(self._key())\n \n     def __repr__(self):\n-        return \"ModelReference(project='{}', dataset_id='{}', project_id='{}')\".format(\n-            self.project, self.dataset_id, self.model_id\n+        return \"ModelReference(project_id='{}', dataset_id='{}', model_id='{}')\".format(\n+            self.project_id, self.dataset_id, self.model_id\n         )\n",
+  "before_similarity": 0.604,
+  "after_similarity": 1.0,
+  "improvement": 0.396,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "WRONG_ABSTRACTION_LEVEL"
+  ],
+  "rule_helped": true,
+  "agent_steps": 7
+}

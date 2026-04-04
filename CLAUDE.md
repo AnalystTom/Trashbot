@@ -1,8 +1,10 @@
-# Trashbot — Meta-Harness for SWE-Agent Trajectories
+# Trashbot — Self-Learning Meta-Harness for AI Agent Benchmarks
 
 ## Project
-Offline analysis pipeline over SWE-bench agent trajectories (nebius/SWE-agent-trajectories).
-Goal: classify failures, apply interventions, simulate improved outcomes.
+Generic self-learning loop that improves AI agents by analyzing failed benchmark traces.
+Works with any benchmark platform (SWE-bench, ClawBench, etc.) through adapters.
+
+**Core loop:** Failed traces → Failure classification → Rule extraction → Corrected patches → Improved scores
 
 ## Setup
 ```bash
@@ -47,7 +49,69 @@ python query_traces.py --repo django --list-instances
 - Baseline results: `baseline/`
 - Key: `instance_id` (e.g. `django__django-11099`) matches HuggingFace dataset
 
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      BENCHMARK SOURCES                       │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐ │
+│  │ SWE-bench    │  │ ClawBench   │  │ Future benchmarks   │ │
+│  │ (parquet)    │  │ (API/local) │  │ (add adapter)       │ │
+│  └──────┬───────┘  └──────┬──────┘  └──────────┬──────────┘ │
+│         │                 │                     │            │
+│  ┌──────▼─────────────────▼─────────────────────▼──────────┐ │
+│  │              src/adapters/                               │ │
+│  │  swebench.py  |  clawbench.py  |  base.py (interface)   │ │
+│  └──────────────────────┬───────────────────────────────────┘ │
+└─────────────────────────┼───────────────────────────────────┘
+                          ▼
+               ┌─────────────────────┐
+               │  failed_traces/     │  ← Normalized trace files
+               │  ├── 10_traces_*/   │     (one JSON per instance)
+               │  └── clawbench/     │
+               └─────────┬───────────┘
+                         │
+          ┌──────────────▼──────────────┐
+          │  Self-Learning Loop          │
+          │                              │
+          │  1. Classify failures        │ ← src/classification/
+          │  2. Extract rules            │ ← claude/skills/learn-from-traces/
+          │  3. Store rules              │ → CLAUDE.md + .claude/skills/
+          │  4. Apply rules to traces    │ ← hermes trace_query(run_harness)
+          │  5. Measure improvement      │ → demo_output/
+          └──────────────┬──────────────┘
+                         │
+          ┌──────────────▼──────────────┐
+          │  Output                      │
+          │  - demo_output/_summary.json │
+          │  - Per-instance results      │
+          │  - Before/after metrics      │
+          └─────────────────────────────┘
+```
+
+## Adding a New Benchmark Source
+
+1. Create `src/adapters/<name>.py` implementing:
+   - `normalize_run(run) → dict` (convert to internal trace format)
+   - `export_for_harness(runs, output_dir) → int` (write trace files)
+2. Export traces to `failed_traces/<name>/`
+3. Run: `trace_query(action="run_harness", trace_set="<name>")`
+
+## ClawBench Integration
+
+```bash
+# From ClawBench API
+python -m src.adapters.clawbench --api-url http://localhost:8080 --export failed_traces/clawbench/
+
+# From local artifacts
+python -m src.adapters.clawbench --local /Users/tom/Dev/clawbench/artifacts/ --export failed_traces/clawbench/
+
+# Run harness on ClawBench traces
+# In hermes: trace_query(action="run_harness", trace_set="clawbench")
+```
+
 ## Project Structure
+- `src/adapters/` — benchmark source adapters (SWE-bench, ClawBench)
 - `src/data/` — dataset loading and validation
 - `src/analysis/` — baseline metrics
 - `src/classification/` — failure taxonomy and classifier
@@ -55,6 +119,8 @@ python query_traces.py --repo django --list-instances
 - `src/simulation/` — outcome simulation
 - `src/eval/` — delta computation
 - `src/demo/` — demo example preparation
+- `claude/skills/learn-from-traces/` — rule extraction skill
+- `hermes-agent/tools/trace_query_tool.py` — hermes tool (query + run_harness)
 - `scripts/` — pipeline runner scripts
 - `baseline/` — baseline KPIs and failure analysis outputs
 

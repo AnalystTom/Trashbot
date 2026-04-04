@@ -1,0 +1,21 @@
+{
+  "instance_id": "iterative__dvc-8554",
+  "failure_type": "NO_TEST_USAGE",
+  "failure_signals": [
+    "NO_TEST_USAGE"
+  ],
+  "issue_text": "ISSUE:\nNoneType error in dvc exp list -A\nThe error occurs sometimes when `dvc exp list -A` is run. This is the verbose output:\r\n\r\n```\r\n2022-11-12 11:32:17,096 ERROR: unexpected error - 'NoneType' object is not subscriptable\r\n------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"dvc/cli/__init__.py\", line 185, in main\r\n  File \"dvc/cli/command.py\", line 22, in do_run\r\n  File \"dvc/commands/experiments/ls.py\", line 27, in run\r\nTypeError: 'NoneType'",
+  "what_went_wrong": "Agent misread the error type. Rule says: match fix to actual error message precisely.",
+  "failed_patch": "\ndiff --git a/dvc/commands/experiments/ls.py b/dvc/commands/experiments/ls.py\nindex d279c98c2..1ffb7a6e8 100644\n--- a/dvc/commands/experiments/ls.py\n+++ b/dvc/commands/experiments/ls.py\n@@ -22,11 +22,14 @@ class CmdExperimentsList(CmdBase):\n         ref_heads = self.repo.scm.describe(remained, base=base)\n \n         for baseline in exps:\n-            name = (\n-                tags[baseline]\n-                or ref_heads[baseline][len(base) :]\n-                or baseline[:7]\n-            )\n+            if baseline in ref_heads:\n+                name = (\n+                    tags[baseline]\n+                    or ref_heads[baseline][len(base) :]\n+                    or baseline[:7]\n+                )\n+            else:\n+                name = tags[baseline] or baseline[:7]\n             if not name_only:\n                 print(f\"{name}:\")\n             for exp_name in exps[baseline]:\n",
+  "corrected_patch": "\ndiff --git a/dvc/commands/experiments/ls.py b/dvc/commands/experiments/ls.py\nindex d279c98c2..8fd5f3e14 100644\n--- a/dvc/commands/experiments/ls.py\n+++ b/dvc/commands/experiments/ls.py\n@@ -24,7 +24,7 @@ class CmdExperimentsList(CmdBase):\n         for baseline in exps:\n             name = (\n                 tags[baseline]\n-                or ref_heads[baseline][len(base) :]\n+                or ref_heads[baseline][len(base) :] if ref_heads[baseline] is not None else baseline[:7]\n                 or baseline[:7]\n             )\n             if not name_only:\n",
+  "passing_patch": "\ndiff --git a/dvc/commands/experiments/ls.py b/dvc/commands/experiments/ls.py\nindex d279c98c2..8fd5f3e14 100644\n--- a/dvc/commands/experiments/ls.py\n+++ b/dvc/commands/experiments/ls.py\n@@ -24,7 +24,7 @@ class CmdExperimentsList(CmdBase):\n         for baseline in exps:\n             name = (\n                 tags[baseline]\n-                or ref_heads[baseline][len(base) :]\n+                or ref_heads[baseline][len(base) :] if ref_heads[baseline] is not None else baseline[:7]\n                 or baseline[:7]\n             )\n             if not name_only:\n",
+  "before_similarity": 0.437,
+  "after_similarity": 1.0,
+  "improvement": 0.563,
+  "patch_matches_correct": true,
+  "rules_applied": [
+    "WRONG_DIAGNOSIS"
+  ],
+  "rule_helped": true,
+  "agent_steps": 9
+}
