@@ -1,0 +1,62 @@
+[
+  {
+    "instance_id": "blairconrad__dicognito-158",
+    "issue_preview": "ISSUE:\nPrivate creator 0031,0020 breaks anonymization\nAnonymizing a dataset containing a value for 0031,0020, which would typically be a [Private Creator Data Element](https://dicom.nema.org/dicom/201",
+    "pass_rate": "29/42",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "pytorch__ignite-1044",
+    "issue_preview": "ISSUE:\ngpu_info crashes because it cannot parse \"N/A\"\n## \ud83d\udc1b Bug description\r\n\r\nWhen trying to use gpu_info, it throws:\r\n\r\n```\r\n File \"/home/blackhc/anaconda3/envs/hello-mnist/lib/python3.7/site-package",
+    "pass_rate": "9/34",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "INM-6__python-odmltables-120",
+    "issue_preview": "ISSUE:\nError when converting empty (apart from header) csv file\n'row_id' is undefined here when the csv file only contains a header:\r\n\r\nhttps://github.com/INM-6/python-odmltables/blob/f9787990e4865f22",
+    "pass_rate": "11/48",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "mie-lab__trackintel-408",
+    "issue_preview": "ISSUE:\nBug in location_identifier for pre_filter=False and non-serial index\nThe function [location_identifier](https://github.com/mie-lab/trackintel/blob/master/trackintel/analysis/location_identifica",
+    "pass_rate": "57/69",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "repobee__repobee-457",
+    "issue_preview": "ISSUE:\nRemove REPOBEE_OAUTH environment variable\nIt has been deprecated for a long time now, since it was replaced with `REPOBEE_TOKEN`",
+    "pass_rate": "6/15",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "iterative__dvc-8554",
+    "issue_preview": "ISSUE:\nNoneType error in dvc exp list -A\nThe error occurs sometimes when `dvc exp list -A` is run. This is the verbose output:\r\n\r\n```\r\n2022-11-12 11:32:17,096 ERROR: unexpected error - 'NoneType' obje",
+    "pass_rate": "2/46",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "ebmdatalab__datalab-pandas-29",
+    "issue_preview": "ISSUE:\n`bq.cached_read` fails confusingly if parent directory doesn't exist\nIf the parent of `csv_path` (which is `csv_dir` below) doesn't exist then this line throws an error:\r\nhttps://github.com/ebm",
+    "pass_rate": "40/94",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "d3dave__cough-3",
+    "issue_preview": "ISSUE:\nException when adding an uninitialized section before an initialized section\nfile.py:133 is inconsistent with file.py:144",
+    "pass_rate": "12/42",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "adamboche__python-marshmallow-union-33",
+    "issue_preview": "ISSUE:\n_serialize ignores the given value\nThe `_serialize` method of `Union` calls the `serialize` method (instead of `_serialize`) on the underlying fields. This means that it ignores the given `valu",
+    "pass_rate": "63/69",
+    "traces_exported": 3
+  },
+  {
+    "instance_id": "django-money__django-money-689",
+    "issue_preview": "ISSUE:\ncalling get_rate with identical source and target currency should be a noop\n- it is always exactly 1\r\n- that doesn't even have to hit the cache ;)",
+    "pass_rate": "51/76",
+    "traces_exported": 3
+  }
+]
